@@ -3,7 +3,6 @@ class Products {
         this.classNameActive = 'products-element__btn_active';
         this.labelAdd = 'Добавить в корзину';
         this.labelRemove = 'Удалить из корзины';
-
     }
 
     handleSetLocationStorage(element, id) { 
@@ -34,7 +33,6 @@ class Products {
                 activeClass = ' ' + this.classNameActive;
                 activeText = this.labelRemove;
             }
-
 
             htmlCatalog += `
             <li class="products-element">

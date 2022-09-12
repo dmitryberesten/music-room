@@ -10,7 +10,6 @@ class Error {
         `;
 
         ROOT_ERROR.innerHTML = html;
-
     }
 }
 

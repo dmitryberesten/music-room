@@ -16,4 +16,3 @@ class Header {
 
 const headerPage = new Header();
 
-

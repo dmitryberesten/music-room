@@ -20,7 +20,6 @@ class Shopping {
             }
         });
 
-
         const html = `
             <div class="shopping-container">
                 <div class="shopping__close" onclick="shoppingPage.handleClear()"></div>
@@ -32,7 +31,6 @@ class Shopping {
                     </tr>
                 </table>
             </div>
-
         `;
         ROOT_SHOPPING.innerHTML = html;
     }

@@ -22,7 +22,6 @@ class LocalStorageUtil {
         } else { 
             products.splice(index, 1);
         }
-
         
         localStorage.setItem(this.keyName, JSON.stringify(products));
 
