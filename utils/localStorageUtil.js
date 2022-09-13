@@ -23,6 +23,7 @@ class LocalStorageUtil {
             products.splice(index, 1);
         }
         
+        // трансформую данні з масива в стрічку
         localStorage.setItem(this.keyName, JSON.stringify(products));
 
         return { pushProducts, products }

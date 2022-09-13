@@ -23,6 +23,7 @@ class Products {
         const productsStore = localStorageUtil.getProducts();
         let htmlCatalog = '';
 
+        // перебираю всі товари каталогу + деструктуризація
         CATALOG.forEach(({ id, name, price, img }) => {
             let activeClass = '';
             let activeText = '';
