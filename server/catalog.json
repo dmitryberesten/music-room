@@ -1,74 +1,74 @@
 [
     {
         "id": "el1",
-        "name": "Gibson Les Paul",
-        "img": "https://i.ibb.co/p3T9Zq5/2018-explorer-antique-natural-1.jpg",
-        "price": 25000
+        "name": "GIBSON CUSTOM SHOP 1968 LES PAUL REISSUE",
+        "img": "https://i.ibb.co/GF2Rf6t/1.jpg",
+        "price": 218300
     },
     {
         "id": "el2",
-        "name": "Gibson Flying V",
-        "img": "https://i.ibb.co/Z80B7cw/2018-flying-v-aged-cherry-13.jpg",
-        "price": 180000
+        "name": "GIBSON '57 LES PAUL GOLDTOP DARKBACK REISSUE",
+        "img": "https://i.ibb.co/2Y7ZrSB/1.jpg",
+        "price": 138250 
     },
     {
         "id": "el3",
-        "name": "Gibson Les Paul",
-        "img": "https://i.ibb.co/qJcYn8j/2018-les-paul-classic-pelham-blue-1.jpg",
-        "price": 145000
+        "name": "GIBSON SLASH LES PAUL NOVEMBER BURST",
+        "img": "https://i.ibb.co/H7R3Gxf/1.jpg",
+        "price": 116550
     },
     {
         "id": "el4",
-        "name": "Gibson Les Paul",
-        "img": "https://i.ibb.co/p3T9Zq5/2018-explorer-antique-natural-1.jpg",
-        "price": 25000
+        "name": "GIBSON SLASH LES PAUL STANDARD",
+        "img": "https://i.ibb.co/jLN6rPr/1.jpg",
+        "price": 113470
     },
     {
         "id": "el5",
-        "name": "Gibson Flying V",
-        "img": "https://i.ibb.co/Z80B7cw/2018-flying-v-aged-cherry-13.jpg",
-        "price": 180000
+        "name": "GIBSON LES PAUL STANDARD 50S TOP TOBACCO BURST",
+        "img": "https://i.ibb.co/D4CCSqB/1.jpg",
+        "price": 98250 
     },
     {
         "id": "el6",
-        "name": "Gibson Les Paul",
-        "img": "https://i.ibb.co/qJcYn8j/2018-les-paul-classic-pelham-blue-1.jpg",
-        "price": 145000
+        "name": "GIBSON LES PAUL STANDARD 60s FIGURED TOP UNBURST",
+        "img": "https://i.ibb.co/0sMKwFs/1.jpg",
+        "price": 96380
     },
     {
         "id": "el7",
-        "name": "Gibson Les Paul",
-        "img": "https://i.ibb.co/p3T9Zq5/2018-explorer-antique-natural-1.jpg",
-        "price": 25000
+        "name": "GIBSON 2018 LES PAUL CLASSIC PELHAM BLUE",
+        "img": "https://i.ibb.co/qJcYn8j/2018-les-paul-classic-pelham-blue-1.jpg",
+        "price": 57470
     },
     {
         "id": "el8",
-        "name": "Gibson Flying V",
-        "img": "https://i.ibb.co/Z80B7cw/2018-flying-v-aged-cherry-13.jpg",
-        "price": 180000
+        "name": "GIBSON SLASH LES PAUL ANACONDA BURST LIMITED EDITION",
+        "img": "https://i.ibb.co/k5fjzLp/1.jpg",
+        "price": 110200
     },
     {
         "id": "el9",
-        "name": "Gibson Les Paul",
-        "img": "https://i.ibb.co/qJcYn8j/2018-les-paul-classic-pelham-blue-1.jpg",
-        "price": 145000
+        "name": "GIBSON LES PAUL DELUXE 70s CHERRY SUNBURST",
+        "img": "https://i.ibb.co/KjWLv4k/1.jpg",
+        "price": 87540
     },
     {
         "id": "el10",
-        "name": "Gibson Les Paul",
-        "img": "https://i.ibb.co/p3T9Zq5/2018-explorer-antique-natural-1.jpg",
-        "price": 25000
+        "name": "GIBSON LES PAUL STUDIO SMOKEHOUSE BURST",
+        "img": "https://i.ibb.co/rywxf10/1.jpg",
+        "price": 43175
     },
     {
         "id": "el11",
-        "name": "Gibson Flying V",
-        "img": "https://i.ibb.co/Z80B7cw/2018-flying-v-aged-cherry-13.jpg",
-        "price": 180000
+        "name": "GIBSON LES PAUL STUDIO WINE RED",
+        "img": "https://i.ibb.co/4jS0xmh/1.jpg",
+        "price": 40350
     },
     {
         "id": "el12",
-        "name": "Gibson Les Paul",
-        "img": "https://i.ibb.co/qJcYn8j/2018-les-paul-classic-pelham-blue-1.jpg",
-        "price": 145000
+        "name": "GIBSON LES PAUL TRIBUTE SATIN CHERRY SUNBURST",
+        "img": "https://i.ibb.co/j3Xzzgz/1.jpg",
+        "price": 34290
     }
 ]
