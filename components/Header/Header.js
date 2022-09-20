@@ -16,7 +16,7 @@ class Header {
             </div>
 
             <div class="header-counter" onclick="headerPage.handlerOpenShoppingPage();">
-                🗑️ ${count}</div>
+                <span class="cart">🛒</span>  ${count}</div>
             </div>
         `
         ROOT_HEADER.innerHTML = html;

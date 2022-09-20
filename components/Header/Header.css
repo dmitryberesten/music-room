@@ -14,6 +14,7 @@
     padding-right: var(--spacing-small);
     font-weight: bold;
     cursor: pointer;
+     font-size: 30px;
 }
 
 
@@ -33,5 +34,9 @@
 .center-heading {
     vertical-align: baseline;
     text-align: center;
+}
+
+.cart {
+    font-size: 30px;
 }
 /* ДОДАВ */
