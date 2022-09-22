@@ -12,7 +12,7 @@ class Shopping {
             if (productsStore.indexOf(id) !== -1) {
                 htmlCatalog += `
                     <tr>
-                        <td class="shopping-element__name">💰 ${name}</td>
+                        <td class="shopping-element__name">🎸 ${name}</td>
                         <td class="shopping-element__price"> ${price.toLocaleString()} грн</td>
                     </tr>
                 `;
@@ -23,12 +23,13 @@ class Shopping {
         const html = `
             <div class="shopping-container">
                 <div class="shopping__close" onclick="shoppingPage.handleClear()"></div>
-                <table>
+                <h2>Ваші замовлення:</h2>
+                <table class="table-container">
                     ${htmlCatalog}
                      <tr>
                         <td class="shopping-element__name">📃 Сумма: </td>
-                        <td class="shopping-element__price"> ${sumCatalog.toLocaleString()} грн</td>
-                    </tr>
+                        <td class="shopping-element__price"> <b>${sumCatalog.toLocaleString()} грн</b></td>
+                    </tr> 
                 </table>
             </div>
         `;
