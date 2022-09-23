@@ -17,7 +17,6 @@
   background-color: var(--color-white);
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
-  /* margin-top: 8vh; */
 }
 
 .products-element__name {
@@ -52,4 +51,5 @@
 .products-element__btn_active {
   border: 1px solid transparent;
   background-image: var(--linear-gradient);
+  color: white;
 }
