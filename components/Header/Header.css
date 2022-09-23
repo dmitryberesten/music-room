@@ -11,10 +11,16 @@
 
 .header-counter{
     margin-left: auto;
-    padding-right: var(--spacing-small);
+    /* padding-right: var(--spacing-small); */
     font-weight: bold;
     cursor: pointer;
      font-size: 30px;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    margin-top: -30px;
 }
 
 /* ............................................................................ */

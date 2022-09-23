@@ -5,7 +5,8 @@
   width: 80%;
   max-width: 1200px;
   margin: var(--spacing-large) auto;
-  /* margin-top: 100px; */
+  padding-left: 0;
+  padding-top: 5vh;
 }
 
 .products-element {
@@ -16,6 +17,7 @@
   background-color: var(--color-white);
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
+  /* margin-top: 8vh; */
 }
 
 .products-element__name {
@@ -48,6 +50,6 @@
 }
 
 .products-element__btn_active {
-     border: 1px solid transparent;
-     background-image: var(--linear-gradient);
+  border: 1px solid transparent;
+  background-image: var(--linear-gradient);
 }

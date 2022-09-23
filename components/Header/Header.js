@@ -12,6 +12,7 @@ class Header {
            </div>
 
             <div class="center-heading">
+            
             <h1>Music Room</h1>
             </div>
 
