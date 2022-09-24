@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,14 +9,24 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
 
     <div id="header"></div>
+
+    <div class="menu">
+        <ul class="menu__list">
+            <li class="menu__item"><a class="menu__item-link" href="">Головна</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="index.html">Каталог</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="">Про нас</a></li>
+        </ul>
+    </div>
+
     <div id="products"></div>
     <div id="shopping"></div>
     <div id="spinner"></div>
     <div id="error"></div>
-    
+
     <!-- Constants and Utils -->
     <script src="constants/root.js"></script>
     <script src="utils/localStorageUtil.js"></script>
@@ -42,4 +53,5 @@
 
     <script src="index.js"></script>
 </body>
+
 </html>

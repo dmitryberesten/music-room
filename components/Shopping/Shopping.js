@@ -13,7 +13,7 @@ class Shopping {
                 htmlCatalog += `
                     <tr>
                         <td class="shopping-element__name">🎸 ${name}</td>
-                        <td class="shopping-element__price"> ${price.toLocaleString()} грн</td>
+                        <td class="shopping-element__price"> ${price.toLocaleString()} $</td>
                     </tr>
                 `;
                 sumCatalog += price;
@@ -28,7 +28,7 @@ class Shopping {
                     ${htmlCatalog}
                      <tr>
                         <td class="shopping-element__name">📃 Сумма: </td>
-                        <td class="shopping-element__price"> <b>${sumCatalog.toLocaleString()} грн</b></td>
+                        <td class="shopping-element__price"> <b>${sumCatalog.toLocaleString()} $</b></td>
                     </tr> 
                 </table>
             </div>

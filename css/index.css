@@ -43,3 +43,35 @@ body {
   line-height: 1.7;
   background-color: var(--color-light);
 }
+
+/* Menu */
+.menu__list {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: center;
+  background-color:#e8e8e8;
+  padding-top: 50px;
+  margin: 0 auto;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.menu__item{
+  padding: 10px 20px 10px 20px;
+  list-style-type: none;
+   cursor: pointer;
+  
+}
+.menu__item:last-of-type {
+  padding-right: 0;
+}
+
+.menu__item-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: inherit;
+  font-weight: 580;
+ 
+}
