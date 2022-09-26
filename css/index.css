@@ -75,3 +75,11 @@ body {
   font-weight: 580;
  
 }
+
+.main-heading {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.5rem;
+}
