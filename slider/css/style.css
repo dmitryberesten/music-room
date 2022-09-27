@@ -88,11 +88,13 @@ html,body{
 	left: 0;
 	background: url('../img/sl-arrow_l.svg') 0 0 / 100% no-repeat;
 	cursor: pointer;
+	stroke: #f8f9fa;
 }
 .slider .slick-arrow.slick-next{
 	right: 0;
 	background: url('../img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
 	cursor: pointer;
+	stroke: #f8f9fa;
 }
 .slider .slick-arrow.slick-disabled{
 	opacity: 0.2;
@@ -109,15 +111,16 @@ html,body{
 }
 .slider .slick-dots button{
 	font-size: 0;
-	width: 10px;
-	height: 10px;
-	background-color: #fff;
+	width: 15px;
+	height: 15px;
+	background-color: black;
 	border-radius: 50%;
+	cursor: pointer;
 }
 
 .slider .slick-dots li.slick-active button{
 	background-color: transparent;
-	border: 1px solid #fff;
+	border: 1px solid black;
 }
 
 .slider__item {
