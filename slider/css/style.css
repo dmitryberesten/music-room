@@ -12,7 +12,7 @@ html,body{
 .wrapper{
 	width: 90%;
 	/* height: 100%; */
-	padding: 10px;
+	padding: 20px 0;
 	display: flex;
 	justify-content:center;
 	align-items: center;
