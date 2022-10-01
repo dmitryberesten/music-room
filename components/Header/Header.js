@@ -13,7 +13,7 @@ class Header {
 
             <div class="center-heading">
             
-            <h1>Music Room</h1>
+            <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Music Room</h1>
             </div>
 
             <div class="header-counter" onclick="headerPage.handlerOpenShoppingPage();">

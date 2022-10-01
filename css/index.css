@@ -1,9 +1,9 @@
 :root {
-  --color-light: #f8f9fa;
+  --color-light: #e9f1f9;
   --color-white: #fff;
   --color-unaccent: #808080;
   --color-medium: #e8e8e8;
-  --color-dark: #a1a1a1;
+  --color-dark: #92b3d3;
   --color-error-light: #f25b6b;
   --color-error-dark: #d65c5c;
 
@@ -55,6 +55,7 @@ body {
   margin: 0 auto;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+  padding-left: 0;
 }
 
 .menu__item {
@@ -63,7 +64,7 @@ body {
   cursor: pointer;
 }
 .menu__item:last-of-type {
-  padding-right: 0;
+  /* padding-right: 0; */
 }
 
 .menu__item-link {

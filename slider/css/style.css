@@ -88,13 +88,13 @@ html,body{
 	left: 0;
 	background: url('../img/sl-arrow_l.svg') 0 0 / 100% no-repeat;
 	cursor: pointer;
-	stroke: #f8f9fa;
+	stroke: #e9f1f9;
 }
 .slider .slick-arrow.slick-next{
 	right: 0;
 	background: url('../img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
 	cursor: pointer;
-	stroke: #f8f9fa;
+	stroke: #e9f1f9;
 }
 .slider .slick-arrow.slick-disabled{
 	opacity: 0.2;
