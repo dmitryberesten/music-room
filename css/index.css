@@ -60,15 +60,30 @@ body {
   padding-left: 0;
 }
 
+@media screen and (max-width: 830px) {
+  .menu__list {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .menu__list {
+    width: 100%;
+
+  }
+}
+
 .menu__item {
   padding: 10px 20px 10px 20px;
   list-style-type: none;
   cursor: pointer;
 }
-.menu__item:last-of-type {
-  /* padding-right: 0; */
-  /* padding-right: 0; */
+@media screen and (max-width: 415px) {
+  .menu__item {
+    padding: 10px;
+  }
 }
+
 
 .menu__item-link {
   text-decoration: none;
