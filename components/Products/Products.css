@@ -34,6 +34,8 @@
 .products-element__price {
   margin-top: var(--spacing-medium);
   color: var(--color-unaccent);
+  display: flex;
+  align-items: center;
 }
 
 .products-element__btn {
@@ -52,4 +54,10 @@
   border: 1px solid transparent;
   background-image: var(--linear-gradient);
   color: white;
+}
+
+.icon-cost {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }

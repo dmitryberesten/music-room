@@ -12,7 +12,9 @@ class Shopping {
             if (productsStore.indexOf(id) !== -1) {
                 htmlCatalog += `
                     <tr>
-                        <td class="shopping-element__name">🎸 ${name}</td>
+                        <td class="shopping-element__name"><svg class="icon-pin">
+                        <use href="./img/symbol-defs.svg#icon-thumb-tack"></use>
+                    </svg> ${name}</td>
                         <td class="shopping-element__price"> ${price.toLocaleString()} $</td>
                     </tr>
                 `;
@@ -27,7 +29,9 @@ class Shopping {
                 <table class="table-container">
                     ${htmlCatalog}
                      <tr>
-                        <td class="shopping-element__name">📃 Сумма: </td>
+                        <td class="shopping-element__name"><svg class="icon-price">
+                        <use href="./img/symbol-defs.svg#icon-credit-card"></use>
+                    </svg> Сума: </td>
                         <td class="shopping-element__price"> <b>${sumCatalog.toLocaleString()} $</b></td>
                     </tr> 
                 </table>

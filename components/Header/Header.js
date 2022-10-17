@@ -17,7 +17,11 @@ class Header {
             </div>
 
             <div class="header-counter" onclick="headerPage.handlerOpenShoppingPage();">
-                <span class="cart">🛒</span>  ${count}</div>
+                <span class="cart">
+                <svg class="icon-basket">
+                    <use href="./img/symbol-defs.svg#icon-shopping-basket"></use>
+                </svg>
+                </span>  ${count}</div>
             </div>
         `
         ROOT_HEADER.innerHTML = html;

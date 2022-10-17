@@ -39,7 +39,9 @@ class Products {
             <li class="products-element">
                 <span class="products-element__name">${name}</span>
                 <img class="products-element__img" src="${img}" />
-                <span class="products-element__price">🏷️ ${price.toLocaleString()} $</span>
+                <span class="products-element__price"><svg class="icon-cost">
+                <use href="./img/symbol-defs.svg#icon-price-tag"></use>
+            </svg> ${price.toLocaleString()} $</span>
                 <button class="products-element__btn${activeClass}" onclick="productsPage.handleSetLocationStorage(this, '${id}');">
                 ${activeText}
                 </button>

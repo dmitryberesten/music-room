@@ -15,6 +15,8 @@
 .shopping-element__name {
   padding: var(--spacing-medium);
   font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 
 .shopping-element__price {
@@ -37,4 +39,11 @@
 
 .table-container {
   margin: 0 auto;
+}
+
+.icon-pin,
+.icon-price {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
 }
