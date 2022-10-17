@@ -1,4 +1,4 @@
-.header-container{
+.header-container {
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: wrap;
@@ -9,18 +9,18 @@
     justify-content: space-around;
 }
 
-.header-counter{
+.header-counter {
     margin-left: auto;
-    /* padding-right: var(--spacing-small); */
     font-weight: bold;
     cursor: pointer;
-     font-size: 30px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
 }
 
 #header {
     position: fixed;
     width: 100%;
-    /* margin-top: -30px; */
 }
 
 /* ............................................................................ */
@@ -42,11 +42,15 @@
 }
 
 .cart {
+    margin-right: 7px;
     font-size: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .icon-basket {
     width: 30px;
     height: 30px;
 }
+
 /* ДОДАВ */
