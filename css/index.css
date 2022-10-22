@@ -4,7 +4,7 @@
   --color-unaccent: #808080;
   --color-medium: #e8e8e8;
   /* --color-medium: white; */
-  
+
   --color-dark: #92b3d3;
   --color-error-light: #f25b6b;
   --color-error-dark: #d65c5c;
@@ -46,6 +46,11 @@ body {
   background-color: var(--color-light);
 }
 
+.current {
+  background-color: var(--color-light);
+
+}
+
 /* Menu */
 .menu__list {
   display: flex;
@@ -78,6 +83,7 @@ body {
   list-style-type: none;
   cursor: pointer;
 }
+
 @media screen and (max-width: 415px) {
   .menu__item {
     padding: 10px;
@@ -86,11 +92,22 @@ body {
 
 
 .menu__item-link {
+  display: block;
+  padding: 0 5px 0 5px;
+  border-radius: 5px;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: inherit;
   font-weight: 580;
+  transform: scale(1.0);
+  transition: all 0.5s ease;
+}
+
+.menu__item-link:hover,
+.menu__item-link:focus {
+  transform: scale(1.2);
+  background-color: white;
 }
 
 .main-heading {
