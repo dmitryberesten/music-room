@@ -1,5 +1,5 @@
 class Shopping {
-    handleClear() { 
+    handleClear() {
         ROOT_SHOPPING.innerHTML = '';
     }
 
@@ -15,7 +15,7 @@ class Shopping {
                         <td class="shopping-element__name"><svg class="icon-pin">
                         <use href="./img/symbol-defs.svg#icon-thumb-tack"></use>
                     </svg> ${name}</td>
-                        <td class="shopping-element__price"> ${price.toLocaleString()} $</td>
+                        <td class="shopping-element__price">${price.toLocaleString()}$</td>
                     </tr>
                 `;
                 sumCatalog += price;
@@ -23,6 +23,7 @@ class Shopping {
         });
 
         const html = `
+        <div class="backdrop">
             <div class="shopping-container">
                 <div class="shopping__close" onclick="shoppingPage.handleClear()"></div>
                 <h2>Ваші замовлення:</h2>
@@ -32,10 +33,11 @@ class Shopping {
                         <td class="shopping-element__name"><svg class="icon-price">
                         <use href="./img/symbol-defs.svg#icon-credit-card"></use>
                     </svg> Сума: </td>
-                        <td class="shopping-element__price"> <b>${sumCatalog.toLocaleString()} $</b></td>
+                        <td class="shopping-element__price"><b>${sumCatalog.toLocaleString()}$</b></td>
                     </tr> 
                 </table>
             </div>
+        </div>
         `;
         ROOT_SHOPPING.innerHTML = html;
     }

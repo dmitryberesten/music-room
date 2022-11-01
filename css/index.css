@@ -47,7 +47,7 @@ body {
 }
 
 .current {
-  background-color: var(--color-light);
+  background-color: var(--color-white);
 
 }
 
@@ -118,6 +118,14 @@ body {
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 500px) {
+  .main-heading {
+    width: 90%;
+    margin-top: 50px;
+    font-size: 1.5rem;
+  }
+}
+
 /* ABOUT US */
 
 .about-us {
@@ -128,6 +136,18 @@ body {
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
   text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .about-us {
+    margin: 30px auto auto auto;
+    width: 90%;
+    padding: 25px 20px;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    text-align: center;
+  }
 }
 
 .address-main-text {
