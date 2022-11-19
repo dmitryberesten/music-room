@@ -57,12 +57,14 @@ body {
   flex-direction: row;
   width: 50%;
   justify-content: center;
-  background-color: #e8e8e8;
+  background-color: #B9E0FF;
   padding-top: 50px;
   margin: 0 auto;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   padding-left: 0;
+  box-shadow: 0 0 5px;
+  z-index: 9999;
 }
 
 @media screen and (max-width: 830px) {
@@ -93,7 +95,7 @@ body {
 
 .menu__item-link {
   display: block;
-  padding: 0 5px 0 5px;
+  padding: 7px;
   border-radius: 5px;
   text-decoration: none;
   text-transform: uppercase;
@@ -163,3 +165,43 @@ body {
   color: inherit;
   text-decoration: none;
 }
+
+/* HOVER */
+.hover-4 {
+  --c: #1095c1;
+  line-height: 1.2em;
+  background: conic-gradient(from -155deg at 100% 50%, var(--c) 90deg, #0000 0)
+      0 var(--p, 0%),
+    conic-gradient(from -135deg at 1.2em 50%, #0000 90deg, var(--c) 0) 100%
+      var(--p, 0%);
+  background-size: var(--s, 0%) 100%;
+  background-repeat: no-repeat;
+  transition: 0.4s ease-in, background-position 0s;
+
+  background-image: var(--linear-gradient);
+}
+.hover-4:hover {
+  --p: 100%;
+  --s: calc(
+    100% + 0.61em
+  ); /* it should be 0.6em(1.2em/2) but we use a litte bigger */
+  color: #fff;
+}
+
+/* body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  place-content: center;
+} */
+/* h3 {
+  font-family: system-ui, sans-serif;
+  font-size: 3rem;
+  margin: 0;
+  cursor: pointer;
+  padding: 0 0.07em;
+} */
+
+
