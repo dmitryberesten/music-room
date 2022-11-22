@@ -23,15 +23,20 @@
 
 ::-webkit-scrollbar {
   width: 17px;
+  cursor: auto;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--color-dark);
   border-radius: 10px;
+  cursor: auto;
+
 }
 
 ::-webkit-scrollbar-track {
   background-color: var(--color-white);
+  cursor: auto;
+
 }
 
 * {
@@ -168,7 +173,7 @@ body {
 
 /* HOVER */
 .hover-4 {
-  --c: #1095c1;
+  --c: #4aadce;
   line-height: 1.2em;
   background: conic-gradient(from -155deg at 100% 50%, var(--c) 90deg, #0000 0)
       0 var(--p, 0%),
@@ -178,7 +183,7 @@ body {
   background-repeat: no-repeat;
   transition: 0.4s ease-in, background-position 0s;
 
-  background-image: var(--linear-gradient);
+  /* background-image: #a3c6e1; */
 }
 .hover-4:hover {
   --p: 100%;
@@ -208,8 +213,8 @@ body {
 }
 
 .cursor {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 100%;
   border: 1px solid black;
   transition: all 200ms ease-out;
@@ -218,12 +223,12 @@ body {
   left: 0;
   top: 0;
   transform: translate(calc(-50% + 15px), -50%);
-  z-index: 1000000;
+  z-index: 100;
 }
 
 .cursor2 {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   border-radius: 100%;
   background-color: black;
   opacity: .3;
@@ -231,7 +236,7 @@ body {
   transform: translate(-50%, -50%);
   pointer-events: none;
   transition: width .3s, height .3s, opacity .3s;
-  z-index: 1000000;
+  z-index: 100;
 }
 
 .hover {
