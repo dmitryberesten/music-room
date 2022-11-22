@@ -23,20 +23,15 @@
 
 ::-webkit-scrollbar {
   width: 17px;
-  cursor: auto;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--color-dark);
   border-radius: 10px;
-  cursor: auto;
-
 }
 
 ::-webkit-scrollbar-track {
   background-color: var(--color-white);
-  cursor: auto;
-
 }
 
 * {
@@ -53,7 +48,6 @@ body {
 
 .current {
   background-color: var(--color-white);
-
 }
 
 /* Menu */
@@ -69,7 +63,6 @@ body {
   border-bottom-right-radius: 30px;
   padding-left: 0;
   box-shadow: 0 0 5px;
-  /* z-index: 1000000; */
 }
 
 @media screen and (max-width: 830px) {
@@ -204,7 +197,6 @@ body {
   font-size: 0.875rem;
   color: #292927;
 }
-/* MOUSE end */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
@@ -213,6 +205,7 @@ body {
 }
 
 .cursor {
+  display: block;
   width: 40px;
   height: 40px;
   border-radius: 100%;
@@ -223,10 +216,11 @@ body {
   left: 0;
   top: 0;
   transform: translate(calc(-50% + 15px), -50%);
-  z-index: 100;
+  z-index: 10000000;
 }
 
 .cursor2 {
+  display: block;
   width: 10px;
   height: 10px;
   border-radius: 100%;
@@ -236,7 +230,7 @@ body {
   transform: translate(-50%, -50%);
   pointer-events: none;
   transition: width .3s, height .3s, opacity .3s;
-  z-index: 100;
+  z-index: 10000000;
 }
 
 .hover {
@@ -245,7 +239,9 @@ body {
 }
 
 .cursorinnerhover {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   opacity: .5;
 }
+
+/* MOUSE end */
