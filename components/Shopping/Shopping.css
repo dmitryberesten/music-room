@@ -1,42 +1,45 @@
 .shopping-container {
   width: 50%;
   height: 80vh;
+  margin: auto;
+  padding: var(--spacing-large);
+
   position: fixed;
   top: 50%;
   left: 50%;
+
   transform: translate(-50%, -50%);
-  margin: auto;
-  padding: var(--spacing-large);
-  background-color: var(--color-white);
   box-shadow: var(--box-shadow);
   border-radius: 30px;
+  background-color: var(--color-white);
 }
 
 @media screen and (max-width: 1420px) {
   .shopping-container {
-  width: 70%;
+    width: 70%;
   }
 }
 
 @media screen and (max-width: 1010px) {
   .shopping-container {
-  width: 80%;
-  overflow: hidden;
+    width: 80%;
+    overflow: hidden;
   }
 }
 
 @media screen and (max-width: 500px) {
   .shopping-container {
-  width: 90%;
-  overflow: hidden;
+    width: 90%;
+    overflow: hidden;
   }
 }
 
 .shopping-element__name {
-  padding: var(--spacing-medium);
-  font-weight: bold;
   display: flex;
   align-items: center;
+  padding: var(--spacing-medium);
+
+  font-weight: bold;
 }
 
 .shopping-element__price {
@@ -45,15 +48,17 @@
 }
 
 .shopping__close {
-  position: absolute;
   width: 35px;
   height: 35px;
+  position: absolute;
   top: 20px;
   right: 20px;
-  background-image: url("/components/Shopping/img/close.svg");
+
+  background-image: url("./components/Shopping/img/close.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
+
   cursor: pointer;
 }
 
@@ -69,28 +74,32 @@
 }
 
 .backdrop {
+  width: 100%;
+  height: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   z-index: 5;
 
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-order {
+  max-width: 250px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 250px;
+
   text-align: center;
   font-size: 25px;
+
   border-radius: 30px;
   border: 1px black solid;
 }

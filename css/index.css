@@ -3,7 +3,6 @@
   --color-white: #fff;
   --color-unaccent: #808080;
   --color-medium: #e8e8e8;
-  /* --color-medium: white; */
 
   --color-dark: #92b3d3;
   --color-error-light: #f25b6b;
@@ -12,6 +11,7 @@
   --spacing-small: 10px;
   --spacing-medium: 15px;
   --spacing-large: 30px;
+  --bg-color: #b9e0ff;
 
   --border-radius: 20px;
 
@@ -41,8 +41,10 @@
 body {
   margin: 0;
   padding: 0;
+
   font-family: sans-serif;
   line-height: 1.7;
+
   background-color: var(--color-light);
 }
 
@@ -52,17 +54,19 @@ body {
 
 /* Menu */
 .menu__list {
-  display: flex;
-  flex-direction: row;
   width: 50%;
-  justify-content: center;
-  background-color: #B9E0FF;
   padding-top: 50px;
   margin: 0 auto;
+  padding-left: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  padding-left: 0;
   box-shadow: 0 0 5px;
+  background-color: var(--bg-color);
 }
 
 @media screen and (max-width: 830px) {
@@ -74,7 +78,6 @@ body {
 @media screen and (max-width: 615px) {
   .menu__list {
     width: 100%;
-
   }
 }
 
@@ -90,17 +93,18 @@ body {
   }
 }
 
-
 .menu__item-link {
   display: block;
   padding: 7px;
-  border-radius: 5px;
+
+  font-weight: 580;
+  letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  border-radius: 5px;
   color: inherit;
-  font-weight: 580;
-  transform: scale(1.0);
+
+  transform: scale(1);
   transition: all 0.5s ease;
 }
 
@@ -113,8 +117,9 @@ body {
 .main-heading {
   width: 70%;
   margin: 0 auto;
-  text-align: center;
   margin-top: 30px;
+
+  text-align: center;
   font-size: 1.5rem;
 }
 
@@ -129,24 +134,28 @@ body {
 /* ABOUT US */
 
 .about-us {
-  margin: 30px auto auto auto;
   width: 50%;
+  margin: 30px auto auto auto;
   padding: 25px 20px;
-  background-color: var(--color-white);
+
+  text-align: center;
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
-  text-align: center;
+
+  background-color: var(--color-white);
 }
 
 @media screen and (max-width: 500px) {
   .about-us {
-    margin: 30px auto auto auto;
     width: 90%;
+    margin: 30px auto auto auto;
     padding: 25px 20px;
+
+    text-align: center;
+
     background-color: var(--color-white);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
-    text-align: center;
   }
 }
 
@@ -175,14 +184,11 @@ body {
   background-size: var(--s, 0%) 100%;
   background-repeat: no-repeat;
   transition: 0.4s ease-in, background-position 0s;
-
-  /* background-image: #a3c6e1; */
 }
+
 .hover-4:hover {
   --p: 100%;
-  --s: calc(
-    100% + 0.61em
-  ); /* it should be 0.6em(1.2em/2) but we use a litte bigger */
+  --s: calc(100% + 0.61em);
   color: #fff;
 }
 
@@ -192,13 +198,13 @@ body {
 }
 
 :root body {
-  font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+  font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 0.875rem;
   color: #292927;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
 * {
   cursor: none;
@@ -208,29 +214,34 @@ body {
   display: block;
   width: 40px;
   height: 40px;
-  border-radius: 100%;
-  border: 1px solid black;
-  transition: all 200ms ease-out;
   position: fixed;
-  pointer-events: none;
   left: 0;
   top: 0;
+
+  pointer-events: none;
+
+  border-radius: 100%;
+  border: 1px solid black;
+
+  transition: all 200ms ease-out;
   transform: translate(calc(-50% + 15px), -50%);
   z-index: 10000000;
 }
 
 .cursor2 {
-  display: block;
+  position: fixed;
   width: 10px;
   height: 10px;
+  display: block;
+
   border-radius: 100%;
-  background-color: black;
-  opacity: .3;
-  position: fixed;
+  opacity: 0.3;
   transform: translate(-50%, -50%);
-  pointer-events: none;
-  transition: width .3s, height .3s, opacity .3s;
+  transition: width 0.3s, height 0.3s, opacity 0.3s;
   z-index: 10000000;
+  pointer-events: none;
+
+  background-color: black;
 }
 
 .hover {
@@ -241,7 +252,12 @@ body {
 .cursorinnerhover {
   width: 30px;
   height: 30px;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 /* MOUSE end */
+
+::selection {
+  color: var(--color-light);
+  background-color: var(--color-dark);
+}

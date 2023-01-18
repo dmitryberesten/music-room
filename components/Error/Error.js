@@ -1,5 +1,5 @@
-class Error { 
-    render() { 
+class Error {
+    render() {
         const html = `
         <div class="error-container">
             <div class="error-message">

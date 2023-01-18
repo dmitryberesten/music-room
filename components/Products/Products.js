@@ -5,13 +5,13 @@ class Products {
         this.labelRemove = 'Видалити з кошика';
     }
 
-    handleSetLocationStorage(element, id) { 
+    handleSetLocationStorage(element, id) {
         const { pushProducts, products } = localStorageUtil.putProducts(id);
 
         if (pushProducts) {
             element.classList.add(this.classNameActive);
             element.innerHTML = this.labelRemove;
-        } else { 
+        } else {
             element.classList.remove(this.classNameActive);
             element.innerHTML = this.labelAdd;
         }

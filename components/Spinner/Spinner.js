@@ -1,13 +1,13 @@
-class Spinner { 
+class Spinner {
     handleClear() {
         ROOT_SPINNER.innerHTML = '';
     }
 
-    render() { 
+    render() {
         const html = `
         
         <div class="spinner-container">
-            <img class="spinner__img" src="components/Spinner/img/spinner.svg" />
+            <img class="spinner__img" src="./components/Spinner/img/spinner.svg" />
         </div>
         `;
 

@@ -1,17 +1,17 @@
-class LocalStorageUtil { 
-    constructor() { 
+class LocalStorageUtil {
+    constructor() {
         this.keyName = 'products';
     }
 
-    getProducts() { 
+    getProducts() {
         const productsLocalStorage = localStorage.getItem(this.keyName);
-        if (productsLocalStorage !== null) { 
+        if (productsLocalStorage !== null) {
             return JSON.parse(productsLocalStorage);
         }
         return [];
     }
 
-    putProducts(id) { 
+    putProducts(id) {
         let products = this.getProducts();
         let pushProducts = false;
         const index = products.indexOf(id);
@@ -19,10 +19,10 @@ class LocalStorageUtil {
         if (index === -1) {
             products.push(id);
             pushProducts = true;
-        } else { 
+        } else {
             products.splice(index, 1);
         }
-        
+
         // трансформую данні з масива в стрічку
         localStorage.setItem(this.keyName, JSON.stringify(products));
 
