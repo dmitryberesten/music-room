@@ -19,6 +19,7 @@ class Products {
         headerPage.render(products.length);
     }
 
+    // відображення данних на сторінці
     render() {
         const productsStore = localStorageUtil.getProducts();
         let htmlCatalog = '';
@@ -35,6 +36,7 @@ class Products {
                 activeText = this.labelRemove;
             }
 
+            // додавання кожного разу нового контенту li до cписку ul
             htmlCatalog += `
             <li class="products-element">
                 <span class="products-element__name">${name}</span>
@@ -49,14 +51,17 @@ class Products {
             `;
         });
 
+        // список товарів
         const html = `
         <ul class="products-container">
             ${htmlCatalog}
         </ul>
         `;
 
+        // вставлення списку товарів на сторінку 
         ROOT_PRODUCTS.innerHTML = html;
     }
 }
 
+// екземпляр класу
 const productsPage = new Products();
