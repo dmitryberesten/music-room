@@ -47,6 +47,8 @@ class Shopping {
             </div>
         </div>
         `;
+
+        // вставлення розмітки на сторінку
         ROOT_SHOPPING.innerHTML = html;
     }
 }

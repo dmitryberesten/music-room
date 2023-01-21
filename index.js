@@ -5,6 +5,8 @@ function render() {
 
     // отримання кількості замовлених товарів
     headerPage.render(productsStore.length);
+
+    // отримання сторінки товарів
     productsPage.render();
 }
 
@@ -20,12 +22,12 @@ fetch('server/catalog.json') // шлях на який передається з
     .then(body => { // тіло файла каталога
         CATALOG = body; // закидаємо тіло каталога в змінну
 
+        // явний показ працездатності спінера
         setTimeout(() => {
             spinnerPage.handleClear();
             render();
         }, 1000);
 
-       
     })
     .catch(error => {  // в разі помилки 
         spinnerPage.handleClear();
