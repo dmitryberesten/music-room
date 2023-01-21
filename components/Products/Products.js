@@ -5,6 +5,7 @@ class Products {
         this.labelRemove = 'Видалити з кошика';
     }
 
+        // обробник подій
     handleSetLocationStorage(element, id) {
         const { pushProducts, products } = localStorageUtil.putProducts(id);
 
@@ -16,11 +17,14 @@ class Products {
             element.innerHTML = this.labelAdd;
         }
 
+        // відображення кількості товарів в кошику
         headerPage.render(products.length);
     }
 
     // відображення данних на сторінці
     render() {
+
+        // отримання товарів локального сховища
         const productsStore = localStorageUtil.getProducts();
         let htmlCatalog = '';
 
@@ -29,11 +33,12 @@ class Products {
             let activeClass = '';
             let activeText = '';
 
+            // якщо немає збігу товарів то додати запис додання в корзину
             if (productsStore.indexOf(id) === -1) {
-                activeText = this.labelAdd;
+                activeText = this.labelAdd; // текст додати до кошика
             } else {
                 activeClass = ' ' + this.classNameActive;
-                activeText = this.labelRemove;
+                activeText = this.labelRemove; // видалити з корзини 
             }
 
             // додавання кожного разу нового контенту li до cписку ul

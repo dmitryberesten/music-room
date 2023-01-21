@@ -1,8 +1,11 @@
 class Header {
+
+    // обробник подій який відкриває сторінку замовлень
     handlerOpenShoppingPage() {
         shoppingPage.render();
     }
 
+    // розмітка для сторінки
     render(count) {
         const html = `
             <div class="header-container">
@@ -24,10 +27,13 @@ class Header {
                 </span>  ${count}</div>
             </div>
         `
+
+        // присвоєння шаблонної строки прямо на сторінку
         ROOT_HEADER.innerHTML = html;
     }
 }
 
+// екземпляр класа
 const headerPage = new Header();
 
 

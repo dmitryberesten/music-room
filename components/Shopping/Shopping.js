@@ -1,14 +1,19 @@
 class Shopping {
+
+    // очистка вікна замовлень
     handleClear() {
         ROOT_SHOPPING.innerHTML = '';
     }
 
+    // відображення шаблонної строки прямо на сторінку
     render() {
+        // отримання товарів з локального сховища
         const productsStore = localStorageUtil.getProducts();
-        let htmlCatalog = '';
-        let sumCatalog = 0;
+        let htmlCatalog = ''; // для нових данних
+        let sumCatalog = 0; // сумма всіх товарів замовлення
 
         CATALOG.forEach(({ id, name, price }) => {
+            // якщо співпадіння не знайдено то додавати нову розмітку (товар)
             if (productsStore.indexOf(id) !== -1) {
                 htmlCatalog += `
                     <tr>
@@ -18,6 +23,8 @@ class Shopping {
                         <td class="shopping-element__price">${price.toLocaleString()}$</td>
                     </tr>
                 `;
+
+                // кожен раз додавати нову ціну товарів до існуючої
                 sumCatalog += price;
             }
         });
@@ -44,4 +51,5 @@ class Shopping {
     }
 }
 
+// екземпляр класа
 const shoppingPage = new Shopping();
