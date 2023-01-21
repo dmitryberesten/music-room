@@ -13,3 +13,20 @@
 10. Desktop and Mobile 
 11. Grid / FlexBox
 12. Spinner
+
+Головна сторінка:
+
+![1](https://user-images.githubusercontent.com/87872240/213876831-fdba3211-fb4a-4647-8cab-9a4799de521f.png)
+
+Каталог товарів:
+
+![2](https://user-images.githubusercontent.com/87872240/213876843-43f80200-fbee-4ce9-8db0-78deb60bf0b3.png)
+
+Замовлення користувача:
+
+![3](https://user-images.githubusercontent.com/87872240/213876874-c4cdf207-9aae-426c-ba54-306da8c09eb1.png)
+
+Сторінка контактів: 
+
+![4](https://user-images.githubusercontent.com/87872240/213876899-77c620b9-2ae7-4870-be9a-561c81c165a0.png)
+
