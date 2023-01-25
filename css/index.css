@@ -52,6 +52,11 @@ body {
   background-color: var(--color-white);
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /* Menu */
 .menu__list {
   width: 50%;
