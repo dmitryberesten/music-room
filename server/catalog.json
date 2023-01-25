@@ -3,13 +3,15 @@
         "id": "el1",
         "name": "GIBSON CUSTOM SHOP 1968 LES PAUL REISSUE",
         "img": "https://i.ibb.co/GF2Rf6t/1.jpg",
-        "price": 5260
+        "price": 5260,
+        "src": "./element-1.html"
     },
     {
         "id": "el2",
         "name": "GIBSON '57 LES PAUL GOLDTOP DARKBACK REISSUE",
         "img": "https://i.ibb.co/2Y7ZrSB/1.jpg",
-        "price": 3240
+        "price": 3240,
+        "src": "./element-2.html"
     },
     {
         "id": "el3",

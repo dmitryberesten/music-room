@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Room</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+
+  <div id="header"></div>
+  <div class="menu">
+    <ul class="menu__list">
+      <li class="menu__item"><a class="menu__item-link hover-4" href="./main.html">Головна</a></li>
+      <li class="menu__item"><a class="menu__item-link current hover-4" href="./index.html">Каталог</a></li>
+      <li class="menu__item"><a class="menu__item-link hover-4" href="./about-us.html">Про нас</a></li>
+    </ul>
+  </div>
+
+  <div id="products"></div>
+  <div id="shopping"></div>
+  <div id="spinner"></div>
+  <div id="error"></div>
+
+  <!-- Constants and Utils -->
+  <script src="constants/root.js"></script>
+  <script src="utils/localStorageUtil.js"></script>
+
+  <!-- Header -->
+  <script src="components/Header/Header.js"></script>
+  <link rel="stylesheet" href="components/Header/Header.css">
+
+  <!-- Products -->
+  <script src="components/Products/element-1.js"></script>
+  <link rel="stylesheet" href="components/Products/element.css">
+
+  <!-- Shopping -->
+  <script src="components/Shopping/Shopping.js"></script>
+  <link rel="stylesheet" href="components/Shopping/Shopping.css">
+
+  <!-- Spinner -->
+  <script src="components/Spinner/Spinner.js"></script>
+  <link rel="stylesheet" href="components/Spinner/Spinner.css">
+
+  <!-- Error -->
+  <script src="components/Error/Error.js"></script>
+  <link rel="stylesheet" href="components/Error/Error.css">
+
+  <script src="index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Plus Jakarta Sans']
+      }
+    });
+  </script>
+  <script src="utils/mouse.js"></script>
+</body>
+
+</html>

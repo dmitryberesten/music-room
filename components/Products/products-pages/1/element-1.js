@@ -5,7 +5,7 @@ class Products {
         this.labelRemove = 'Видалити з кошика';
     }
 
-    // обробник подій
+        // обробник подій
     handleSetLocationStorage(element, id) {
         const { pushProducts, products } = localStorageUtil.putProducts(id);
 
@@ -29,7 +29,11 @@ class Products {
         let htmlCatalog = '';
 
         // перебираю всі товари каталогу + деструктуризація
-        CATALOG.forEach(({ id, name, price, img, src }) => {
+        for (let i = 0; i < CATALOG.length; i++) {
+            let { id, name, price, img } = CATALOG;
+            CATALOG = CATALOG[1];
+            console.log(CATALOG);
+            
             let activeClass = '';
             let activeText = '';
 
@@ -41,22 +45,21 @@ class Products {
                 activeText = this.labelRemove; // видалити з корзини 
             }
 
+
             // додавання кожного разу нового контенту li до cписку ul
             htmlCatalog += `
             <li class="products-element">
-            <a href="${src}">
-                <span class="products-element__name">${name}</span>
-                <img class="products-element__img" src="${img}" />
+                <span class="products-element__name">${CATALOG.name}</span>
+                <img class="products-element__img" src="${CATALOG.img}" />
                 <span class="products-element__price"><svg class="icon-cost">
                 <use href="./img/symbol-defs.svg#icon-price-tag"></use>
-            </svg> ${price.toLocaleString()} $</span>
-            </a>
-                <button class="products-element__btn${activeClass}" onclick="productsPage.handleSetLocationStorage(this, '${id}');">
+            </svg> ${CATALOG.price.toLocaleString()} $</span>
+                <button class="products-element__btn${activeClass}" onclick="productsPage.handleSetLocationStorage(this, '${CATALOG.id}');">
                 ${activeText}
                 </button>
             </li>
             `;
-        });
+        }
 
         // список товарів
         const html = `
