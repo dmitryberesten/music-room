@@ -17,60 +17,70 @@
         "id": "el3",
         "name": "GIBSON SLASH LES PAUL NOVEMBER BURST",
         "img": "https://i.ibb.co/H7R3Gxf/1.jpg",
-        "price": 2870
+        "price": 2870,
+        "src": "./element-3.html"
     },
     {
         "id": "el4",
         "name": "GIBSON SLASH LES PAUL STANDARD",
         "img": "https://i.ibb.co/jLN6rPr/1.jpg",
-        "price": 2750
+        "price": 2750,
+        "src": "./element-4.html"
     },
     {
         "id": "el5",
         "name": "GIBSON LES PAUL STANDARD 50S TOP TOBACCO BURST",
         "img": "https://i.ibb.co/D4CCSqB/1.jpg",
-        "price": 2360 
+        "price": 2360,
+        "src": "./element-5.html"
     },
     {
         "id": "el6",
         "name": "GIBSON LES PAUL STANDARD 60s FIGURED TOP UNBURST",
         "img": "https://i.ibb.co/0sMKwFs/1.jpg",
-        "price": 2320
+        "price": 2320,
+        "src": "./element-6.html"
     },
     {
         "id": "el7",
         "name": "GIBSON 2018 LES PAUL CLASSIC PELHAM BLUE",
         "img": "https://i.ibb.co/qJcYn8j/2018-les-paul-classic-pelham-blue-1.jpg",
-        "price": 1380
+        "price": 1380,
+        "src": "./element-7.html"
     },
     {
         "id": "el8",
         "name": "GIBSON SLASH LES PAUL ANACONDA BURST LIMITED EDITION",
         "img": "https://i.ibb.co/k5fjzLp/1.jpg",
-        "price": 2650
+        "price": 2650,
+        "src": "./element-8.html"
     },
     {
         "id": "el9",
         "name": "GIBSON LES PAUL DELUXE 70s CHERRY SUNBURST",
         "img": "https://i.ibb.co/KjWLv4k/1.jpg",
-        "price": 2140
+        "price": 2140,
+        "src": "./element-9.html"
     },
     {
         "id": "el10",
         "name": "GIBSON LES PAUL STUDIO SMOKEHOUSE BURST",
         "img": "https://i.ibb.co/rywxf10/1.jpg",
-        "price": 1040
+        "price": 1040,
+        "src": "./element-10.html"
     },
     {
         "id": "el11",
         "name": "GIBSON LES PAUL STUDIO WINE RED",
         "img": "https://i.ibb.co/4jS0xmh/1.jpg",
-        "price": 970
+        "price": 970,
+        "src": "./element-11.html"
     },
     {
         "id": "el12",
         "name": "GIBSON LES PAUL TRIBUTE SATIN CHERRY SUNBURST",
         "img": "https://i.ibb.co/j3Xzzgz/1.jpg",
-        "price": 820
+        "price": 820,
+        "src": "./element-12.html"
     }
 ]

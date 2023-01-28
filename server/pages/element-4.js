@@ -31,8 +31,7 @@ class Products {
         // перебираю всі товари каталогу + деструктуризація
         for (let i = 0; i < CATALOG.length; i++) {
             let { id, name, price, img } = CATALOG;
-            CATALOG = CATALOG[1];
-            console.log(CATALOG);
+            CATALOG = CATALOG[3];
             
             let activeClass = '';
             let activeText = '';
@@ -45,18 +44,22 @@ class Products {
                 activeText = this.labelRemove; // видалити з корзини 
             }
 
-
             // додавання кожного разу нового контенту li до cписку ul
             htmlCatalog += `
             <li class="products-element">
                 <span class="products-element__name">${CATALOG.name}</span>
                 <img class="products-element__img" src="${CATALOG.img}" />
-                <span class="products-element__price"><svg class="icon-cost">
-                <use href="./img/symbol-defs.svg#icon-price-tag"></use>
-            </svg> ${CATALOG.price.toLocaleString()} $</span>
+                <div class="mini-flex">
+                <span class="products-element__price">
+                <svg class="icon-cost">
+                <use href="./img/symbol-defs.svg#icon-price-tag">
+                </use>
+                </svg> ${CATALOG.price.toLocaleString()} $</span>
                 <button class="products-element__btn${activeClass}" onclick="productsPage.handleSetLocationStorage(this, '${CATALOG.id}');">
                 ${activeText}
                 </button>
+                </div>
+
             </li>
             `;
         }
