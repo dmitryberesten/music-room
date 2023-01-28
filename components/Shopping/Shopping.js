@@ -43,7 +43,7 @@ class Shopping {
                         <td class="shopping-element__price"><b>${sumCatalog.toLocaleString()}$</b></td>
                     </tr> 
                 </table>
-                <div><p class="btn-order">ЗАМОВИТИ</p></div>
+                <div><p class="btn-order" onclick="shoppingPage.handleClear()">ЗАМОВИТИ</p></div>
             </div>
         </div>
         `;
