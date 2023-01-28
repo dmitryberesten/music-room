@@ -49,6 +49,7 @@ class Products {
             <li class="products-element">
                 <span class="products-element__name">${CATALOG.name}</span>
                 <img class="products-element__img" src="${CATALOG.img}" />
+                <p>${CATALOG.description}</p>
                 <div class="mini-flex">
                 <span class="products-element__price">
                 <svg class="icon-cost">
